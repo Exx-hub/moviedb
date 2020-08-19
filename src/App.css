@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  background-color: black;
+}
+
+.title {
+  font-size: x-large;
+  color: white;
+  font-weight: 650;
+  margin-left: 20px;
+}
+
+.img {
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 0.4em;
+}
+
+.input {
+  display: flex;
+  width: 98%;
+  font-size: 18px;
+  color: gray;
+  padding: 4px 4px 4px 8px;
+}
+
+.movie-list {
+  background-color: #23823d;
+  height: 100vh;
+}
+
+.movie-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.movie-image {
+  padding: 3em;
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-info {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em 2em 1em;
+}
+.movie-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 0.5em 2em;
+  align-self: flex-start;
+}
+
+.btn {
+  border-radius: 0.7em;
+}
+
+.play-btn {
+  background-color: green;
+  color: white;
+}
+.view-btn {
+  background-color: white;
+  color: green;
+}
+
+@media screen and (max-width: 525px) {
+  .movie-card {
+    flex-direction: column;
+  }
+  .movie-image {
+    margin-top: 0.5em;
+    padding: 1em;
+    padding-bottom: 0.5em;
+  }
+  .movie-info {
+    padding: 0 3em;
+    text-align: justify;
+  }
+  .movie-buttons {
+    align-self: center;
+    margin-right: 1em;
+  }
+  .overview {
+    margin-top: 0rem;
+  }
+}
